@@ -1,0 +1,11 @@
+
+option java_outer_classname = "LoginReqProto";
+
+message LoginReq{
+    required int32 recCode = 2;
+    required string recContend = 1;
+    optional string userName = 3;
+    optional string passwd = 4; 
+    optional int32 UID = 5;
+    repeated int32 friendsUIDs = 6;
+}

@@ -1,0 +1,23 @@
+option java_outer_classname = "LoginRespProto";
+
+message FriendsInfo {
+    required int32 UID = 1;
+    required string petname = 2;
+    required string remark = 3;
+    required int32 image = 4;
+}
+message PersonalData {
+    required string petname = 1;
+    required string remark = 2;
+    required int32 image = 3;
+    required int32 ege = 4;
+    required string sex = 5;
+}
+message LoginResp {
+    required int32 respCode = 1;
+    required string respContend = 2;
+    optional int32 UID = 3;
+    repeated FriendsInfo friendsInfo = 4;
+    repeated int32 onlineUIDs = 5;
+    optional PersonalData personalData = 6;
+}

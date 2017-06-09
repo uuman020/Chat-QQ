@@ -1,0 +1,9 @@
+option java_outer_classname = "RegReqProto";
+
+message ReqReq {
+    required int32 recCode = 1;
+    required string recContend = 2;
+    required string email = 3;
+    optional string passwd = 4;
+    optional string verification = 5;
+}

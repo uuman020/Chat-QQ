@@ -1,0 +1,9 @@
+option java_outer_classname = "UDPMessageProto";
+
+message UDPMessage {
+    required int32 recCode = 1;
+    required string RecContend = 2;
+    required int32 fromUID = 3;
+    required int32 toUID = 4;
+    required string code = 5;
+}
